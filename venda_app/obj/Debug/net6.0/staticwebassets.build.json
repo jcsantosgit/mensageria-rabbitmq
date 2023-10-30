@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "IqBAp4avS9Gk8rrH/g+/KlOZUQ8YtTHRIk4SzkNnws4=",
+  "Source": "venda_app",
+  "BasePath": "_content/venda_app",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
