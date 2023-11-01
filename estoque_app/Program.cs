@@ -1,4 +1,5 @@
 using estoque_app.Data;
+using estoque_app.Service;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(context=>context.UseSqlite(
     configuration.GetConnectionString("Default")
 ));
+builder.Services.AddSingleton<IEventMessageProcess, EventMessageProcess>();
 
 var app = builder.Build();
 

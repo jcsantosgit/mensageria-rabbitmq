@@ -33,7 +33,7 @@ public class EstoqueController : ControllerBase
     }
 
     [HttpPost("reduzir")]
-    public IActionResult ReduzirEstoque(ReduzirRequest model)
+    public IActionResult ReduzirEstoque(EstoqueRequest model)
     {
         try
         {
@@ -49,13 +49,13 @@ public class EstoqueController : ControllerBase
         }
     }
 
-    [HttpPost("aumentar/{idProduto}")]
-    public IActionResult AumentarEstoque(int idProduto)
+    [HttpPost("aumentar")]
+    public IActionResult AumentarEstoque(EstoqueRequest model)
     {
         try
         {
-            var entity = _context.Estoques.First(c => c.IdProduto == idProduto);
-            entity.Quantidade = entity.Quantidade +1;
+            var entity = _context.Estoques.First(c => c.IdProduto == model.Produto);
+            entity.Quantidade = entity.Quantidade + model.Quantidade;
             _context.SaveChanges();
             return Ok("Atualizado");
         }

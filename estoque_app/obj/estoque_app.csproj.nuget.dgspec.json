@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/jcsantos/Projects/microservices/estoque_app/estoque_app.csproj": {}
+    "/home/joao/Projects/mensageria-rabbitmq/estoque_app/estoque_app.csproj": {}
   },
   "projects": {
-    "/home/jcsantos/Projects/microservices/estoque_app/estoque_app.csproj": {
+    "/home/joao/Projects/mensageria-rabbitmq/estoque_app/estoque_app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jcsantos/Projects/microservices/estoque_app/estoque_app.csproj",
+        "projectUniqueName": "/home/joao/Projects/mensageria-rabbitmq/estoque_app/estoque_app.csproj",
         "projectName": "estoque_app",
-        "projectPath": "/home/jcsantos/Projects/microservices/estoque_app/estoque_app.csproj",
-        "packagesPath": "/home/jcsantos/.nuget/packages/",
-        "outputPath": "/home/jcsantos/Projects/microservices/estoque_app/obj/",
+        "projectPath": "/home/joao/Projects/mensageria-rabbitmq/estoque_app/estoque_app.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/Projects/mensageria-rabbitmq/estoque_app/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/jcsantos/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[7.0.13, )"
             },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -82,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.413/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.415/RuntimeIdentifierGraph.json"
         }
       }
     }

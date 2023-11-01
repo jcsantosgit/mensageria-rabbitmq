@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using venda_app.Data;
+using venda_app.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ ConfigurationManager configuration = builder.Configuration;
 builder.Services.AddDbContext<DataContext>(context=>context.UseSqlite(
     configuration.GetConnectionString("Default")
 ));
+
+builder.Services.AddSingleton<IRabbitMqClient, RabbitMqClient>();
 
 // Add services to the container.
 
